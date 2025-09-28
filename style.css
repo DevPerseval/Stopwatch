@@ -1,0 +1,61 @@
+@media (max-width: 500px) {
+  .stopwatch {
+    width: 280px;
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    margin: 0;
+}
+.stopwatch{ 
+    background: #fff;
+    padding: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;  
+}
+.stopwatch h1{
+  margin: 0 0 30px;
+  font-size: 64px;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 2px;   
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: 2px solid #fde0e2; /* add border for active effect */
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff; /* default white */
+  transition: all 0.2s ease;
+}
+
+/* Hover effect: light pink background */
+button:hover {
+  background-color: #ffe6ea; /* light pink */
+}
+
+/* Active/click effect: dark pink border */
+button:active {
+  border-color: #ffbeec; /* dark pink */
+}
+
